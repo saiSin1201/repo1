@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+            <result name="successDel">/common/del_success.jsp</result>
+            <result name="successUpdate">/common/update_success.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        
+        
+        <action name="userReg" class="userAction" method="userReg">
+        </action>
+        <action name="userLogin" class="userAction" method="userLogin">
+        </action>
+        <action name="userLogout" class="userAction" method="userLogout">
+             <result name="success">/qiantai/index.html</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        
+        
+        
+         
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        <action name="adminManageFenye" class="adminAction" method="adminManageFenye">
+            <result name="success">/admin/index/adminManageFenye.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/qiantai/liuyan/liuyanAll.jsp</result>
+        </action>
+        
+        
+        <action name="catelogMana" class="catelogAction" method="catelogMana">
+             <result name="success">/admin/catelog/catelogMana.jsp</result>
+        </action>
+        <action name="catelogAdd" class="catelogAction" method="catelogAdd">
+        </action>
+        <action name="catelogDel" class="catelogAction" method="catelogDel">
+        </action>
+        <action name="catelogAll" class="catelogAction" method="catelogAll">
+             <result name="success">/qiantai/catelog/catelogAll.jsp</result>
+        </action>
+        
+        
+        <action name="newsMana" class="newsAction" method="newsMana">
+             <result name="success">/admin/news/newsMana.jsp</result>
+        </action>
+        <action name="newsAdd" class="newsAction" method="newsAdd">
+        </action>
+        <action name="newsDel" class="newsAction" method="newsDel">
+        </action>
+        <action name="newsDetailHou" class="newsAction" method="newsDetailHou">
+             <result name="success">/admin/news/newsDetailHou.jsp</result>
+        </action>
+        <action name="newsAll" class="newsAction" method="newsAll">
+             <result name="success">/qiantai/news/newsAll.jsp</result>
+        </action>
+        <action name="newsDetailQian" class="newsAction" method="newsDetailQian">
+             <result name="success">/qiantai/news/newsDetailQian.jsp</result>
+        </action>
+        <action name="newsSearch" class="newsAction" method="newsSearch">
+             <result name="success">/qiantai/news/newsSearch.jsp</result>
+        </action>
+        
+        
+        
+        
+        <action name="picNewsAdd" class="picNewsAction" method="picNewsAdd">
+        </action>
+        <action name="picNewsDel" class="picNewsAction" method="picNewsDel">
+        </action>
+        <action name="picNewsMana" class="picNewsAction" method="picNewsMana">
+             <result name="success">/admin/picNews/picNewsMana.jsp</result>
+        </action>
+        <action name="picNewsDetail" class="picNewsAction" method="picNewsDetail">
+             <result name="success">/admin/picNews/picNewsDetail.jsp</result>
+        </action>
+        <action name="picNewsDetailQian" class="picNewsAction" method="picNewsDetailQian">
+             <result name="success">/qiantai/picNews/picNewsDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="gonggaoAdd" class="gonggaoAction" method="gonggaoAdd">
+        </action>
+        <action name="gonggaoDel" class="gonggaoAction" method="gonggaoDel">
+        </action>
+        <action name="gonggaoMana" class="gonggaoAction" method="gonggaoMana">
+            <result>/admin/gonggao/gonggaoMana.jsp</result>
+        </action>
+        <action name="gonggaoDetail" class="gonggaoAction" method="gonggaoDetail">
+            <result>/admin/gonggao/gonggaoDetail.jsp</result>
+        </action>
+        <action name="gonggaoDetailQian" class="gonggaoAction" method="gonggaoDetailQian">
+            <result>/qiantai/gonggao/gonggaoDetailQian.jsp</result>
+        </action>
+        <action name="gonggaoQian5" class="gonggaoAction" method="gonggaoQian5">
+            <result>/qiantai/gonggao/gonggaoQian5.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        <action name="toupiaoAdd" class="toupiaoAction" method="toupiaoAdd">
+        </action>
+        <action name="toupiaoChakan" class="toupiaoAction" method="toupiaoChakan">
+             <result>/admin/toupiao/toupiaoChakan.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+    </package>
+</struts>
